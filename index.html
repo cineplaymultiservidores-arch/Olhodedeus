@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Engajamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="dot"></span> ENGAGE<span>PRO</span></div>
+    <div class="status"><i></i> Atendimento online</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PAINEL DE ENGAJAMENTO</p>
+        <h1>Pedidos rápidos para<br><strong>Instagram</strong></h1>
+        <p class="subtitle">Escolha um serviço, informe o link e a quantidade. O pedido será preparado para envio direto ao WhatsApp.</p>
+      </div>
+      <div class="hero-badge">⚡ RÁPIDO</div>
+    </section>
+
+    <section class="services">
+      <article class="service-card" data-service="Instagram - Seguidores Mundiais" data-price="10.00" data-type="profile">
+        <div class="card-top">
+          <span class="tag">SEGUIDORES</span><span class="service-code">3890</span>
+        </div>
+        <h2>Instagram - Seguidores Mundiais</h2>
+        <p class="desc">Sem Refill · 20–30K/dia · Servidor</p>
+        <div class="specs"><span>⏱ Início: 0–30 min</span><span>📦 20–30K/dia</span></div>
+        <div class="buy-row"><div><strong>R$ 10,00</strong><small class="unit">/ 1.000</small></div><button class="order-btn">Fazer pedido</button></div>
+      </article>
+
+      <article class="service-card" data-service="Instagram - Visualizações" data-price="2.00" data-type="media">
+        <div class="card-top">
+          <span class="tag">VISUALIZAÇÕES</span><span class="service-code">3880</span>
+        </div>
+        <h2>Instagram - Visualizações</h2>
+        <p class="desc">Envio Rápido · Máx. 10M · Melhor Custo</p>
+        <div class="specs"><span>⏱ Início: 0–15 min</span><span>📈 Máx. 10M</span></div>
+        <div class="buy-row"><div><strong>R$ 2,00</strong><small class="unit">/ 1.000</small></div><button class="order-btn">Fazer pedido</button></div>
+      </article>
+
+      <article class="service-card" data-service="Instagram - Curtidas Mundiais" data-price="2.00" data-type="media">
+        <div class="card-top">
+          <span class="tag">CURTIDAS</span><span class="service-code">3531</span>
+        </div>
+        <h2>Instagram - Curtidas Mundiais</h2>
+        <p class="desc">Sem Refill · 50–100K/dia · HQ · Estável</p>
+        <div class="specs"><span>⏱ Início: 0–30 min</span><span>📦 50–100K/dia</span></div>
+        <div class="buy-row"><div><strong>R$ 2,00</strong><small class="unit">/ 1.000</small></div><button class="order-btn">Fazer pedido</button></div>
+      </article>
+    </section>
+
+    <section class="info">
+      <div>🔒 <b>Perfil público</b><span>O perfil/post/reels precisa estar público para o pedido.</span></div>
+      <div>📱 <b>Pedido via WhatsApp</b><span>Confira os dados antes de enviar a solicitação.</span></div>
+      <div>🎬 <b>Reels</b><span>Para Reels, envie o link específico do Reels.</span></div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Fechar">×</button>
+      <p class="eyebrow">NOVO PEDIDO</p>
+      <h2 id="modalService">Serviço</h2>
+      <p class="modal-note" id="linkHelp">Informe o link do perfil.</p>
+
+      <label for="link">Link do Instagram</label>
+      <input id="link" type="url" placeholder="https://www.instagram.com/..." autocomplete="off">
+
+      <label for="quantity">Quantidade</label>
+      <input id="quantity" type="number" min="1" step="1" placeholder="Ex.: 1000"><div class="unit-note">Preço calculado a cada 1.000 unidades.</div>
+
+      <div class="total">
+        <span>Total</span><strong id="total">R$ 0,00</strong>
+      </div>
+
+      <p class="warning">Use somente links públicos. Não informe senha ou dados de acesso.</p>
+      <button class="whatsapp" id="send">Enviar pedido pelo WhatsApp</button>
+    </div>
+  </div>
+
+  <footer>© 2026 EngagePro · Painel demonstrativo</footer>
+  <script src="script.js"></script>
+</body>
+</html>
